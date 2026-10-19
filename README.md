@@ -87,6 +87,21 @@ Réglages côté Coolify :
 
 Le build du site se fait **dans l'image** (`npm ci` + `npm run build`) : aucune commande à fournir à Coolify.
 
+### Vérifier que le Dockerfile est bien pris en compte
+
+Si le déploiement échoue **encore** avec `Node.js v22.19.0 is not supported by Astro!`, c'est que le build pack n'a pas été changé. Le log trahit le build pack utilisé :
+
+| Trace dans le log | Build pack |
+|---|---|
+| `Generating nixpacks configuration with: nixpacks plan …` | ❌ Nixpacks |
+| `Found application type: node.` | ❌ Nixpacks |
+| `load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-…` | ❌ Nixpacks |
+| `Pulling latest image (nginx:alpine)` | ❌ Nixpacks + *Is it a static site?* coché |
+
+Un déploiement via le Dockerfile commence par `load build definition from Dockerfile` puis `FROM node:24-alpine`. Aucune mention de `nixpacks` n'apparaît.
+
+Après avoir changé le build pack, pense à **Save** la configuration **puis** relancer un déploiement (avec *Force rebuild* pour ne pas réutiliser le cache). Supprime aussi la variable `NIXPACKS_NODE_VERSION` si tu l'avais créée : elle n'a plus d'effet.
+
 ### Déploiement automatique (webhook)
 
 L'application a été créée en **dépôt public** : Coolify n'a alors aucun accès à ton compte GitHub et **ne peut donc pas créer le webhook tout seul**. Il faut le déclarer à la main.
