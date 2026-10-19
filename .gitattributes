@@ -1,0 +1,13 @@
+# Le déploiement clone sur Linux et le Dockerfile / nginx.conf sont critiques :
+# on force des fins de ligne LF dans tout le dépôt.
+* text=auto eol=lf
+
+# Fichiers binaires
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.woff binary
+*.woff2 binary

@@ -70,6 +70,30 @@ npm run check    # type-check des fichiers .astro
 
 > ⚠️ Pense à mettre à jour `site` dans `astro.config.mjs` et `SITE.url` dans `src/consts.ts` si le domaine change.
 
+## Déploiement (Coolify)
+
+Le repo contient un **Dockerfile multi-stage** (`node:24-alpine` → `nginx:1.29-alpine`) et un `nginx.conf` (cache, gzip, en-têtes de sécurité).
+
+> ⚠️ **Ne pas utiliser le build pack Nixpacks.** Le snapshot nixpkgs de Nixpacks est figé et ne fournit que Node 22.19.0, alors qu'Astro 7 exige Node ≥ 22.22.0 : le build échoue avec `Node.js v22.19.0 is not supported by Astro!`. Changer `.nvmrc` ou `NIXPACKS_NODE_VERSION` n'y remédie pas (Nixpacks mappe par version majeure).
+
+Réglages côté Coolify :
+
+| Réglage | Valeur |
+|---|---|
+| Build Pack | **Dockerfile** |
+| Ports Exposes | `80` |
+| Is it a static site? | ❌ décoché (le Dockerfile s'en charge) |
+| Build Command / Publish Directory | vides (ignorés) |
+
+Le build du site se fait **dans l'image** (`npm ci` + `npm run build`) : aucune commande à fournir à Coolify.
+
+Pour builder/tester l'image en local :
+
+```bash
+docker build -t portfolio-astro .
+docker run --rm -p 8080:80 portfolio-astro   # http://localhost:8080
+```
+
 ## Différences avec la version React
 
 - Plus de TanStack Router ni de React : une seule page statique (`src/pages/index.astro`).
