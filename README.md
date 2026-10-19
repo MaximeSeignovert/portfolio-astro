@@ -87,6 +87,26 @@ Réglages côté Coolify :
 
 Le build du site se fait **dans l'image** (`npm ci` + `npm run build`) : aucune commande à fournir à Coolify.
 
+### Déploiement automatique (webhook)
+
+L'application a été créée en **dépôt public** : Coolify n'a alors aucun accès à ton compte GitHub et **ne peut donc pas créer le webhook tout seul**. Il faut le déclarer à la main.
+
+1. **Coolify** → ton application → onglet **Webhooks** → section *Manual Git Webhooks* : copie l'**URL**, et génère/copie le **secret**.
+2. **GitHub** → page du repo → *Settings* → **Webhooks** → **Add webhook** :
+   - *Payload URL* : l'URL copiée depuis Coolify
+   - *Content type* : **`application/json`** (indispensable, sinon Coolify ne parse pas le payload)
+   - *Secret* : le secret copié depuis Coolify
+   - *SSL verification* : activé
+   - *Which events?* : **Just the push event**
+   - *Active* : ✅
+3. Vérifie dans GitHub → *Webhooks* → **Recent Deliveries** : la réponse doit être `200`. Puis pousse un commit sur `main` → un déploiement doit apparaître dans Coolify.
+
+> ⚠️ L'URL du webhook doit être **joignable depuis Internet** : c'est GitHub qui appelle ton Coolify, en sortant. Si l'URL contient `localhost` ou une IP privée, le webhook échouera toujours — expose Coolify derrière un domaine en HTTPS.
+
+> Alternative : connecter un **GitHub App** dans Coolify (*Sources* → *GitHub App*). Coolify gère alors les webhooks automatiquement, et ça débloque aussi les dépôts privés et les *preview deployments*.
+
+> Si Coolify répond `200` mais ne déploie rien : vérifie **Watch Paths** dans les réglages de l'application. Un chemin qui ne matche pas le fichier poussé fait silencieusement ignorer le push.
+
 Pour builder/tester l'image en local :
 
 ```bash
