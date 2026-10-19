@@ -1,0 +1,111 @@
+---
+import '@/styles/global.css'
+import { SITE } from '@/consts'
+import aboutData from '@/data/about.json'
+
+interface Props {
+  title?: string
+  description?: string
+  image?: string
+}
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  image = SITE.ogImage,
+} = Astro.props
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? SITE.url).href
+const ogImage = new URL(image, Astro.site ?? SITE.url).href
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.name,
+  url: SITE.url,
+  image: ogImage,
+  jobTitle: SITE.jobTitle,
+  email: `mailto:${SITE.email}`,
+  description: aboutData.intro,
+  knowsAbout: aboutData.skills,
+  worksFor: {
+    '@type': 'Organization',
+    name: SITE.employer,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Grenoble',
+    addressCountry: 'FR',
+  },
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'ESGI Grenoble' },
+    { '@type': 'CollegeOrUniversity', name: 'IUT de Grenoble' },
+    { '@type': 'CollegeOrUniversity', name: 'IUT de Dijon' },
+  ],
+  sameAs: [SITE.github, SITE.linkedin],
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: `${SITE.name} — Portfolio`,
+  url: SITE.url,
+  inLanguage: 'fr-FR',
+  author: { '@type': 'Person', name: SITE.name },
+}
+---
+
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="author" content={SITE.name} />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={`${SITE.name} — Portfolio`} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={`Portrait de ${SITE.name}`} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/psyduck.png" />
+    <link rel="apple-touch-icon" href="/psyduck.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(websiteSchema)} />
+  </head>
+  <body class="bg-background text-foreground antialiased">
+    <a
+      href="#home"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:border focus:border-foreground/20 focus:bg-background focus:px-4 focus:py-2 focus:text-sm"
+    >
+      Aller au contenu
+    </a>
+    <slot />
+  </body>
+</html>

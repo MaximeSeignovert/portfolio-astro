@@ -1,0 +1,23 @@
+---
+import aboutData from '@/data/about.json'
+import { SITE } from '@/consts'
+---
+
+<section
+  id="home"
+  class="min-h-svh flex flex-col justify-center max-w-6xl mx-auto px-5 md:px-12"
+>
+  <h1
+    class="text-[clamp(2.5rem,11vw,12rem)] font-black leading-[0.85] tracking-[-0.04em] uppercase"
+  >
+    Maxime<br />Seignovert
+  </h1>
+  <div class="mt-6 md:mt-16">
+    <p class="text-base sm:text-lg md:text-xl text-muted-foreground max-w-md leading-relaxed">
+      {aboutData.tagline}
+    </p>
+    <p class="text-xs sm:text-sm text-muted-foreground/60 mt-3 uppercase tracking-[0.1em]">
+      {SITE.employer} · Grenoble
+    </p>
+  </div>
+</section>

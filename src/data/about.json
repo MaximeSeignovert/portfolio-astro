@@ -1,0 +1,12 @@
+{
+  "tagline": "Développeur Fullstack",
+  "intro": "Diplômé en architecture logiciel à l'ESGI Grenoble, je suis désormais Développeur Fullstack chez Qoia (Groupe Octime).",
+  "description": "Au fil de mes expériences, j'ai travaillé sur une large variété de projets utilisant différentes technologies. Mon engagement envers la qualité, la créativité et la collaboration me permet de réaliser des solutions innovantes et efficaces.",
+  "education": {
+    "school": "ESGI Grenoble",
+    "degree": "Mastère Informatique — Diplômé 2026",
+    "specialization": "Architecture Logiciel"
+  },
+  "skills": ["JavaScript", "TypeScript", "C# / .NET", "React", "Node.js", "Python", "Tailwind CSS", "API REST"],
+  "cta": "N'hésitez pas à me contacter si vous avez une idée à concrétiser ou si vous souhaitez simplement échanger."
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "title": "Poqet",
+    "date": "Septembre 2025",
+    "description": "Application mobile de Gestion des temps et activités.",
+    "tags": ["React", "TypeScript", "Tailwind", "Capacitor", ".NET"],
+    "lien": "https://www.qoia-rh.com/poqet-application-mobile",
+    "lienImage": "https://play-lh.googleusercontent.com/JHd7P_5wR-jtfUhhTjd7TQUqnC7eFUO1T3U5Mlk6ZOa9QVIWkqa1C9vHOjWmIs1dPSPk",
+    "featured": true
+  },
+  {
+    "title": "Daily Notes",
+    "date": "Mars 2025",
+    "description": "Application PWA de gestion de notes quotidiennes.",
+    "tags": ["React", "TypeScript", "Tailwind", "Supabase", "Vite"],
+    "lien": "https://note.seignovm.fr",
+    "lienImage": "https://note.seignovm.fr/logo.png",
+    "featured": true
+  },
+  {
+    "title": "Planning Activités",
+    "date": "Septembre 2025",
+    "description": "Application de gestion de planning d'activités.",
+    "tags": ["React", "TypeScript", "Tailwind", "Supabase", "Vite"],
+    "lien": "https://planning.seignovm.fr",
+    "lienImage": "https://planning.seignovm.fr/calendar_icon.png",
+    "featured": true
+  },
+  {
+    "title": "Portfolio Svelte",
+    "date": "Juin 2024",
+    "description": "Un portfolio moderne et interactif construit avec Svelte.",
+    "tags": ["Svelte", "JavaScript", "Tailwind", "Animations"],
+    "lien": "https://github.com/MaximeSeignovert/Svelte-Portfolio",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Svelte_logo_by_gengns.svg/640px-Svelte_logo_by_gengns.svg.png",
+    "featured": true
+  },
+  {
+    "title": "Hackathon SQL Diff",
+    "date": "Mars 2026",
+    "description": "Outil Rust développé lors d'un hackathon pour comparer des schémas SQL entre PostgreSQL et SQLite. Génère des rapports et des scripts de migration.",
+    "tags": ["Rust", "PostgreSQL", "SQLite", "Hackathon", "CLI"],
+    "lien": "https://github.com/MaximeSeignovert/Hackathon-sql-diff",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1200px-Rust_programming_language_black_logo.svg.png",
+    "featured": false
+  },
+  {
+    "title": "DDDriveByeBye",
+    "date": "Avril 2026",
+    "description": "Projet de DDD autour d'une plateforme de mobilité temps réel. J'ai réalisé le front en mode app web mobile en 30 minutes à l'aide de mon boilerplate, avec une carte interactive Leaflet.",
+    "tags": ["React", "TypeScript", "Vite", "Leaflet", "Tailwind"],
+    "lien": "https://dddrivebyebye.netlify.app/",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "JeuFPSComposer",
+    "date": "Avril 2026",
+    "description": "Test de jeu réalisé en une après-midi avec Composer 2 de Cursor. FPS classique chacun pour soi, projet fun pour m'amuser et apprendre à gérer du multi-agent avec Three.js et WebSocket.",
+    "tags": ["Three.js", "Node.js", "Express", "WebSocket", "JavaScript"],
+    "lien": "https://github.com/MaximeSeignovert/JeuFPSComposer",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/1024px-Three.js_Icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "Planning Edufine",
+    "date": "Octobre 2025",
+    "description": "Application de planning hebdomadaire pour la plateforme Edusign. Visualisation des cours, suivi des présences (présent, absent, justifié) et navigation entre les semaines.",
+    "tags": ["React", "TypeScript", "Tailwind", "Shadcn/ui", "Edusign API"],
+    "lien": "https://planning-edufine.netlify.app",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "IOT Parking Intelligent",
+    "date": "Octobre 2025",
+    "description": "Broker et dashboard pour un projet IoT de parking intelligent. Gestion des capteurs, logique métier et interface de monitoring en temps réel.",
+    "tags": ["Node.js", "IoT", "JavaScript", "HTML", "Dashboard"],
+    "lien": "https://github.com/MaximeSeignovert/IOT_ESGI",
+    "lienImage": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
+    "featured": false
+  },
+  {
+    "title": "UserVite",
+    "date": "Juin 2025",
+    "description": "Clone d'UberEats permettant de parcourir des restaurants, filtrer par cuisine et temps de livraison, consulter des menus et gérer un panier interactif.",
+    "tags": ["React", "TypeScript", "Tailwind", "TanStack Router", "Vite"],
+    "lien": "https://user-vite.seignovm.fr",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "Microservice Livraison",
+    "date": "Juin 2025",
+    "description": "Microservice REST de gestion des livraisons et livreurs en Node.js. CRUD complet, suivi du statut des commandes, déploiement via Docker.",
+    "tags": ["Node.js", "REST", "SQLite", "Docker", "JavaScript"],
+    "lien": "https://github.com/MaximeSeignovert/microservice-livraison",
+    "lienImage": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
+    "featured": false
+  },
+  {
+    "title": "Boilerplate React",
+    "date": "Juin 2025",
+    "description": "Template de démarrage moderne pour applications React. Stack préconfigurée avec TypeScript, Vite, TanStack Router, Tailwind CSS et Shadcn/ui.",
+    "tags": ["React", "TypeScript", "Vite", "TanStack Router", "Shadcn/ui", "Tailwind"],
+    "lien": "https://github.com/MaximeSeignovert/boilerplate",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "Todo Kotlin",
+    "date": "Mars 2025",
+    "description": "Application Android de gestion de tâches réalisée dans le cadre d'un cours de programmation réactive. Architecture Clean avec MVVM, Room et Jetpack Compose.",
+    "tags": ["Kotlin", "Jetpack Compose", "Room", "Hilt", "Android"],
+    "lien": "https://github.com/MaximeSeignovert/todoKotlin",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png",
+    "featured": false
+  },
+  {
+    "title": "Holdem Planning",
+    "date": "Mars 2024",
+    "description": "Application de suivi du temps des fiches pour les planning poker.",
+    "tags": ["React", "JavaScript", "Tailwind", "Shadcn/ui"],
+    "lien": "https://holdem-planning.vercel.app/",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    "featured": false
+  },
+  {
+    "title": "MineSweeper",
+    "date": "Fin 2023",
+    "description": "Application de démineur développé durant ma 3ème année de BUT. Liaison avec Firebase et authentification. Utilisation de Riverpod",
+    "tags": ["Flutter", "Firebase", "Riverpod", "Dart"],
+    "lien": "https://flutter-minesweeper-d7574.web.app/",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/2048px-Flutter_logo.svg.png",
+    "featured": false
+  },
+  {
+    "title": "Tour of Heroes",
+    "date": "Fin 2023",
+    "description": "Application web servant de tutoriel Angular, lié à l'API BlackMarket, avec un systeme de combat et d'économie.",
+    "tags": ["Angular", "Firebase", "TypeScript"],
+    "lien": "https://tour-of-heroes-6dc62.web.app/",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+    "featured": false
+  },
+  {
+    "title": "API BlackMarket",
+    "date": "Fin 2023",
+    "description": "API Swagger réalisé lors de la 3ème année de BUT afin de créer un marché noir pour l'application Tour of Heroes.",
+    "tags": ["Node.js", "Express", "Swagger", "REST"],
+    "lien": "https://github.com/MaximeSeignovert/BlackMarket",
+    "lienImage": "https://cdn-icons-png.flaticon.com/512/5968/5968322.png",
+    "featured": false
+  },
+  {
+    "title": "Gravity Escape",
+    "date": "Septembre 2023",
+    "description": "Jeu video en python réalisé lors de la GameJam de l'IUT2 de Grenoble avec l'équipe Patate2Foreach.",
+    "tags": ["Python", "PyGame", "GameJam"],
+    "lien": "https://github.com/patate-de-foreach/GravityEscape",
+    "lienImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+    "featured": false
+  }
+]

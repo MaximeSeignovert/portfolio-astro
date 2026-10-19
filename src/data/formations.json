@@ -1,0 +1,23 @@
+[
+  {
+    "diplome": "Mastère Informatique - Architecture Logicielle",
+    "ecole": "ESGI Grenoble",
+    "date": "2024 — 2026",
+    "lieu": "Grenoble, France",
+    "description": "Mastère spécialisé en architecture logicielle, obtenu en 2026. Formation réalisée en alternance chez Qoia, orientée conception de systèmes, développement avancé et gestion de projets complexes."
+  },
+  {
+    "diplome": "BUT Informatique",
+    "ecole": "IUT de Grenoble",
+    "date": "2023 — 2024",
+    "lieu": "Grenoble, France",
+    "description": "Bachelor Universitaire de Technologie en informatique. Formation approfondie en développement logiciel, bases de données, réseaux et gestion de projets."
+  },
+  {
+    "diplome": "DUT Informatique",
+    "ecole": "IUT de Dijon",
+    "date": "2019 — 2021",
+    "lieu": "Dijon, France",
+    "description": "Diplôme Universitaire de Technologie en informatique. Acquisition des fondamentaux en programmation, algorithmique et développement web."
+  }
+]

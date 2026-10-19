@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Développeur Fullstack — CDI",
+    "date": "Septembre 2026 → Aujourd'hui",
+    "lieu": "Grenoble",
+    "entreprise": "QOIA (Groupe Octime)",
+    "description": "Poursuite en CDI après l'alternance en tant que Développeur Fullstack. Développement évolutif et curatif sur l'application de GTA (Gestion des Temps et des Activités) eConnection, développement d'API, refonte graphique et application mobile en React et .NET (Capacitor).",
+    "tags": ["Agilité", "TypeScript", "React", "C#", ".NET", "API REST", "Capacitor"],
+    "lien": "https://www.groupehsw.com/gestion-des-temps-et-des-activites",
+    "highlight": true
+  },
+  {
+    "title": "Développeur Logiciel — Alternance",
+    "date": "Juillet 2023 → Septembre 2026",
+    "lieu": "Grenoble",
+    "entreprise": "QOIA (Groupe Octime)",
+    "description": "Développement curratif et évolutif sur l'application de GTA (Gestion des Temps et des Activités) eConnection. Développement d'une API. Refonte graphique de l'application. Développement d'une application mobile en React et .NET (Capacitor).",
+    "tags": ["Agilité", "JavaScript", "jQuery", "C#", ".NET", "React", "API REST", "Capacitor"],
+    "lien": "https://www.groupehsw.com/gestion-des-temps-et-des-activites",
+    "highlight": true
+  },
+  {
+    "title": "Agent Contractuel",
+    "date": "Sept. → Nov. 2022",
+    "lieu": "Valence",
+    "entreprise": "Direction Départementale des Finances Publiques (SPFE)",
+    "description": "Travail administratif au service de la publicité foncière et travail sur application assurance-vie au service d’enregistrement.",
+    "tags": [],
+    "lien": "https://www.drome.gouv.fr/Services-de-l-Etat/Economie.-finances-publiques/Direction-departementale-des-finances-publiques-DDFiP/Informations-generales-DDFIP",
+    "highlight": false
+  },
+  {
+    "title": "Développeur C#",
+    "date": "Avril → Juillet 2021",
+    "lieu": "Dijon",
+    "entreprise": "Immunodiagnostic Systems",
+    "description": "Stage de 3 mois pour mon DUT en informatique. Refonte de la partie “journalisation applicative” d’un logiciel de supervision de machine de diagnostic in vitro. Recueil du besoin utilisateur, Développement, Test unitaire.",
+    "tags": [".NET 5", "WPF", "MVVM", "OOP", "AOP"],
+    "lien": "https://www.idsplc.com/company-overview/",
+    "highlight": true
+  },
+  {
+    "title": "Agent Vacataire",
+    "date": "Été 2019",
+    "lieu": "Valence",
+    "entreprise": "DGFIP",
+    "description": "J’ai eu la charge de gérer les remboursements partiels de la taxe intérieure de consommation sur les produits énergétiques (TICPE) et de la taxe intérieure de consommation sur le gaz naturel (TICGN).",
+    "tags": [],
+    "lien": "https://www.drome.gouv.fr/Services-de-l-Etat/Economie.-finances-publiques/Direction-departementale-des-finances-publiques-DDFiP/Informations-generales-DDFIP",
+    "highlight": false
+  }
+]
